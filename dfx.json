@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "pets_backend": {
+      "main": "src/pets_backend/main.mo",
+      "type": "motoko"
+    },
+    "pets_frontend": {
+      "dependencies": [
+        "pets_backend"
+      ],
+      "source": [
+        "src/pets_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pets_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
