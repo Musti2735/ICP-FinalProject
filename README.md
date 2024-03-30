@@ -1,60 +1,70 @@
-# pets
+# 🐾 Pet Management Platform
 
-Welcome to your new pets project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+Bu platform, kullanıcıların evcil hayvanlarını kaydetmelerine, bilgilerini güncellemelerine ve sağlık bilgilerini takip etmelerine olanak tanır. Kurgusal olarak, veterinerlik hizmeti veren kurukuşların, tedaviye gelen hayvanları sisteme kaydettiği ve tedavi geçmişinin takip edildiği bir senaryo üzerinde düşünülmüştür.
+Uygulamanın amacı, pet tedavi bilgilerinin güvenli bir şekilde ICP üzerinde saklanması ve takip edilmesidir. 
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Özellikler
 
-To learn more before you start working with pets, see the following documentation available online:
+- Uygulamada bir pet kaydı oluşturulur, pet'e sistem tarafından random bir ID atanır.
+- Pet oluşturulurken aynı zamanda tedavi bilgileri eklenebilir. 
+- Oluşturulan pet bir listeye kaydedilir. Kullanıcı, ilgili pet öğresine "ID" ile veya "name" ile arama yaparak erişebilir.
+- Pet'e yeni tedavi bilgileri eklenebilir.
+- Kullanıcı pet bilgilerine ve geçmiş tüm tedavi bilgilerine erişebilir. 
+- Eğer pet sahiplendirilmişe başka bir listeye kaydedilir.
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Motoko Programming Language Guide](https://internetcomputer.org/docs/current/motoko/main/motoko)
-- [Motoko Language Quick Reference](https://internetcomputer.org/docs/current/motoko/main/language-manual)
 
-If you want to start working on your project right away, you might want to try the following commands:
+## Teknolojiler
 
-```bash
-cd pets/
-dfx help
-dfx canister --help
-```
+- **Backend:** Motoko (Internet Computer platformu için)
+- **Frontend:** React, Bootstrap
 
-## Running the project locally
+## Backend Fonksiyonları
 
-If you want to test your project locally, you can use the following commands:
+### `createPet`
+- **Açıklama:** Yeni bir evcil hayvanı sisteme kaydeder.
+- **Parametreler:** `id` (Text), `pet` (Pet), `petInfo` (PetInfo)
+- **Dönüş Değeri:** async Bool (Başarılı ise true)
 
-```bash
-# Starts the replica, running in the background
-dfx start --background
+### `addInfo`
+- **Açıklama:** Belirli bir evcil hayvana sağlık bilgisi ekler.
+- **Parametreler:** `id` (Text), `newInfo` (Info)
+- **Dönüş Değeri:** async Bool (Başarılı ise true)
 
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
-```
+### `addOwnerList`
+- **Açıklama:** Evcil hayvanı sahiplendirme listesine ekler.
+- **Parametreler:** `id` (Text), `pet` (Pet)
+- **Dönüş Değeri:** async Bool (Başarılı ise true)
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
+### Sorgu Fonksiyonları
+- `getPetList`: Sisteme kayıtlı tüm evcil hayvanları listeler.
+- `getInfoList`: Tüm evcil hayvanların sağlık bilgilerini listeler.
+- `getOwnerList`: Sahiplendirilmiş evcil hayvanların listesini getirir.
+- `getInfos`: Belirli bir evcil hayvanın sağlık bilgilerini getirir.
+- `getPet`: ID'ye göre belirli bir evcil hayvanı getirir.
 
-If you have made changes to your backend canister, you can generate a new candid interface with
+## Frontend Komponentleri
 
-```bash
-npm run generate
-```
+### `App`
+- **Açıklama:** Uygulamanın ana bileşenidir. Diğer bileşenleri içerir ve durum yönetimini sağlar.
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
+### `PetForm`
+- **Açıklama:** Evcil hayvan oluşturma ve bilgilerini giriş formu.
 
-If you are making frontend changes, you can start a development server with
+### `PetList`
+- **Açıklama:** Kayıtlı evcil hayvanların listesini gösterir.
 
-```bash
-npm start
-```
+### `PetInfoForm`
+- **Açıklama:** Evcil hayvanın sağlık bilgilerini eklemek için kullanılır.
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+## Kurulum ve Çalıştırma
 
-### Note on frontend environment variables
+### Backend
+1. Dfinity SDK'nın yüklenmesi gerekmektedir.
+2. `dfx start` komutu ile yerel bir Internet Computer replikası başlatılabilir.
+3. `dfx deploy` ile kodlarınızı replikaya yükleyebilirsiniz.
 
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
+### Frontend
+1. `npm install` ile gerekli paketleri yükleyin.
+2. `npm start` ile uygulamayı başlatın.
 
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
-# ICP-FinalProject
+
