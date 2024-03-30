@@ -1,0 +1,6 @@
+.img-responsive {
+    width: 100%; /* Konteynerin genişliğine göre esner */
+    height: 200px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmi en-boy oranını bozmadan kaplar */
+  }
+  

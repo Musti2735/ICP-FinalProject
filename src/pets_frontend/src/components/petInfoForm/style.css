@@ -1,0 +1,7 @@
+.treatment-history {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
