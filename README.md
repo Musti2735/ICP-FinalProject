@@ -1,3 +1,5 @@
+You can access the English README file from <a target="_blank" href="https://github.com/Musti2735/ICP-FinalProject/blob/main/readmeENG.md"> here <a/> 
+
 # 🐾 Pet Management Platform
 
 Bu platform, kullanıcıların evcil hayvanlarını kaydetmelerine, bilgilerini güncellemelerine ve sağlık bilgilerini takip etmelerine olanak tanır. Kurgusal olarak, veterinerlik hizmeti veren kurukuşların, tedaviye gelen hayvanları sisteme kaydettiği ve tedavi geçmişinin takip edildiği bir senaryo üzerinde düşünülmüştür.
