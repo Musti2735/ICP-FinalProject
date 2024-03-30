@@ -3,7 +3,17 @@
 Bu platform, kullanıcıların evcil hayvanlarını kaydetmelerine, bilgilerini güncellemelerine ve sağlık bilgilerini takip etmelerine olanak tanır. Kurgusal olarak, veterinerlik hizmeti veren kurukuşların, tedaviye gelen hayvanları sisteme kaydettiği ve tedavi geçmişinin takip edildiği bir senaryo üzerinde düşünülmüştür.
 Uygulamanın amacı, pet tedavi bilgilerinin güvenli bir şekilde ICP üzerinde saklanması ve takip edilmesidir. 
 
-[![Kapak Resmi](./images)](https://youtu.be/PgmsR2DLloI)
+(https://youtu.be/PgmsR2DLloI) : Progmramın nasıl çalıştığını bu 2 dk'lık youtube videosu ile izleyebilirsiniz. 
+
+## Ekran Görüntüleri
+
+<img src='https://github.com/Musti2735/ICP-FinalProject/blob/main/images/3.png'  width='700px'>
+<hr><br>
+<img src='https://github.com/Musti2735/ICP-FinalProject/blob/main/images/1.png'  width='700px'>
+<hr><br>
+<img src='https://github.com/Musti2735/ICP-FinalProject/blob/main/images/2.png'  width='700px'>
+
+
 
 
 
