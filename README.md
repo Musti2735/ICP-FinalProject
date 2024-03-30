@@ -3,6 +3,10 @@
 Bu platform, kullanıcıların evcil hayvanlarını kaydetmelerine, bilgilerini güncellemelerine ve sağlık bilgilerini takip etmelerine olanak tanır. Kurgusal olarak, veterinerlik hizmeti veren kurukuşların, tedaviye gelen hayvanları sisteme kaydettiği ve tedavi geçmişinin takip edildiği bir senaryo üzerinde düşünülmüştür.
 Uygulamanın amacı, pet tedavi bilgilerinin güvenli bir şekilde ICP üzerinde saklanması ve takip edilmesidir. 
 
+[![Kapak Resmi](./images)](https://youtu.be/PgmsR2DLloI)
+
+
+
 ## Özellikler
 
 - Uygulamada bir pet kaydı oluşturulur, pet'e sistem tarafından random bir ID atanır.
