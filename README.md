@@ -5,7 +5,7 @@ You can access the English README file from <a target="_blank" href="https://git
 Bu platform, kullanıcıların evcil hayvanlarını kaydetmelerine, bilgilerini güncellemelerine ve sağlık bilgilerini takip etmelerine olanak tanır. Kurgusal olarak, veterinerlik hizmeti veren kurukuşların, tedaviye gelen hayvanları sisteme kaydettiği ve tedavi geçmişinin takip edildiği bir senaryo üzerinde düşünülmüştür.
 Uygulamanın amacı, pet tedavi bilgilerinin güvenli bir şekilde ICP üzerinde saklanması ve takip edilmesidir. 
 
-(https://youtu.be/PgmsR2DLloI) : Progmramın nasıl çalıştığını bu 2 dk'lık youtube videosu ile izleyebilirsiniz. 
+Progmramın nasıl çalıştığını ve program tanıtımını <a target="_blank" href="https://www.youtube.com/watch?v=b9mm4p2cbH4">bu youtube videosu </a> ile izleyebilirsiniz. 
 
 ## Ekran Görüntüleri
 
@@ -83,4 +83,4 @@ Uygulamanın amacı, pet tedavi bilgilerinin güvenli bir şekilde ICP üzerinde
 1. `npm install` ile gerekli paketleri yükleyin.
 2. `npm start` ile uygulamayı başlatın.
 
-
+Not : Images klasörü içinde, program demosunda kullanılmak üzere birtakım fotoğraflar yüklenmiştir.
