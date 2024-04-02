@@ -2,7 +2,7 @@
 
 This platform allows users to register their pets, update their information, and track their health information. Conceptually, it is designed for veterinary service organizations to register animals that come in for treatment and to track their treatment history. The purpose of the application is to securely store and track pet treatment information on the ICP.
 
-(https://youtu.be/PgmsR2DLloI) : You can watch how the program works with this 2-minute YouTube video.
+You can watch how the program works with this <a target="_blank" href="https://www.youtube.com/watch?v=b9mm4p2cbH4">YouTube video.</a>
 
 ## Screenshots
 
