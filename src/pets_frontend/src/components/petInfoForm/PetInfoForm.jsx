@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '../card';
+import Card from '../card/Card';
 import './style.css'
 
 function PetInfoForm(props) {
