@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { pets_backend } from 'declarations/pets_backend';
 import PetForm from './components/petform/PetForm';
-import PetList from './components/petlist/PetList';
+import PetList from './components/petList/PetList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Modal from './components/modal';
+import Modal from './components/modal/Modal';
 import PetInfoForm from './components/petInfoForm/PetInfoForm';
 
 function App() {
