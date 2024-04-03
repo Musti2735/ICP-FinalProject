@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '../card';
+import Card from '../card/Card';
 
 function PetList(props) {
   const { petList, setCurrentView, setSelectedPetId, ownerList, arrayBufferToBase64,setIsModalOpen, setModalMessage } = props;
